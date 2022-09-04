@@ -3,49 +3,102 @@
 
 <head>
     <title>My page</title>
+    <style>
+        .word {
+            font-size: 20px;
+        }
+
+        body {
+            background-color: rgb(233, 245, 248);
+            text-align: center
+        }
+
+        .divcss5 {
+            margin: 0 auto;
+            width: 400px;
+            height: 100px;
+            border: 1px solid #000
+        }
+    </style>
 </head>
 
 <body>
-    <h1><b>自我介绍</b></h1>
-    <p>姓名：曾言
+    <!--开头-->
+    <div>
+    <h2><b>WELCOME TO MY PROTFOLIO</b></h2>
+    <p style="font-size:20px;">你好，我叫<b>曾言</b></p>
         <br>
-        <br>
-        性别：女
-        <br>
-        <br>
-        爱好：
-        <br>
-        <a href="Photograph.html" target="_blank">
-            <ul>
-                <li>摄影</li>
-            </ul>
-        <a href="Snowboard.html" target="_blank">
-                <ul>
-                    <li>滑雪</li>
-                </ul>
-            </a>
-            <a href="Coffee.html" target="_blank">
-                <ul>
-                    <li>咖啡</li>
-                </ul>
-            </a>
-            <a href="Game.html" target="_blank">
-                <ul>
-                    <li>游戏</li>
-                </ul>
-            </a>
-        <br>
-        家庭成员：
-        <br>
-        <p><b>南南</b></p>
-        <img title="她叫南南" src="nan.jpeg" width="400px" alt=她叫南南　>
-        <br>
-        <p><b>北北</b></p>
-        <img title="她叫北北" src="bei.jpeg" width="400px" alt=他叫北北>
+        <p style="font-size:20px;">这是我家的两位成员：</p>
+        
+        </b>
         <br>
 
+        <div style="column-count: 2;">
+            <p><b>南南</b></p>
+            <img src="nan.jpeg" width="400px">
+            <p><b>北北</b></p>
+            <img src="bei.jpeg" width="400px">
+        </div>
+    <br>
+    <hr>
+    </div>
 
-    </p>
+    <!--兴趣爱好-->
+    <div>
+        <p class="word"><b>我的一些兴趣爱好：</b></p>
+        <br>
+        <p class="word">摄影</p>
+        <br>
 
+        <!--滑雪-->
+        <div style="column-count: 2;">
+            <p></p>
+            <img src="moon.jpeg" width="300px">
+            <p></p>
+            <img src="cloud.jpeg" width="400px">
+        </div>
+
+        <!--滑雪-->
+        <br>
+        <p class="word">滑雪</p>
+        <br>
+        <div style="column-count: 2;">
+            <p></p>
+            <img src="snow1.jpeg" width="300px">
+            <p></p>
+            <img src="snow2.jpeg" width="400px">
+        </div>
+
+        <!--游戏-->
+        <br>
+        <p class="word">游戏</p>
+        <br>
+        <div style="column-count: 2;">
+            <p></p>
+            <img src="game1.jpeg" width="400px">
+            <p></p>
+            <img src="game2.jpeg" width="400px">
+        </div>
+        <br>
+        <br>
+        <!--填写-->
+        <form action="login" method="post">
+            <label for="username">Name :</label>
+            <input id="username" type="text" placeholder="admin" name="username" required>
+            <br>
+            <br>
+            <label for="password">Password :</label>
+            <input id="password" type="password" name="password" required>
+            <br>
+            <br>
+            <label for="question">任何问题 :</label>
+            <textarea></textarea>
+            <br>
+            <br>
+            <input type="submit">
+        </form>
+    <hr>
+    <div>
 </body>
+
 </html>
